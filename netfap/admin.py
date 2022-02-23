@@ -1,6 +1,6 @@
 
 from django.contrib import admin
-from .models import Actors,Movie
+from .models import Actor,Movie
 # Register your models here.
 
 @admin.register(Movie)
@@ -8,8 +8,8 @@ from .models import Actors,Movie
 class MoveiAdmin(admin.ModelAdmin):
     list_display=['name','year','imdb']
 
-@admin.register(Actors)
-class ActorsAdmin(admin.ModelAdmin):
+@admin.register(Actor)
+class ActorAdmin(admin.ModelAdmin):
     
     list_display = ['name','birth_date',] 
    
